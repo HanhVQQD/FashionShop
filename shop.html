@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="shop.css">
+    <title>Fashion</title>
+</head>
+<body>
+    <div id="header1">
+        <div>
+            <a href="shop.html" id="logo">
+                <img src="image/chinh-removebg-preview.png" >
+            </a>
+        </div>
+        <div id="menu">
+            <ul id="menu1">
+                <li> <a href="shop.html">ALL</a></li>
+                <li> <a href="shop.html">MALE</a></li>
+                <li><a href="shop.html">FEMALE</a></li>
+                <li><a href="shop.html">SALE OFF</a></li>
+                <li><a onclick="openNav()"><i class="ri-shopping-cart-line"></i></a></li>
+            </ul>
+        </div>
+        <div class="count1">
+            <p id="count1">0</p>
+        </div>
+    </div>
+    <div class="Fashion">
+        <div class="o1">
+            <p id="new">News Fashion</p>
+            <div class="oo1">
+                <div class="ooo1">
+                    <img id="img1" width="350px" src="image/2girl.jpg">
+                    <p id="brands">Brands</p>
+                    <button class="button">View</button>
+                </div>
+                <div class="ooo2">
+                    <img id="img2" width="350px"src="image/fina.jpg" > 
+                    <p id="office">Office fashion</p>
+                    <button class="button">View</button>
+                </div>
+            </div>        
+        </div>  
+        <div class="o2"> 
+            <div class="img3">
+                <img width="725px"src="image/ao.jpg">
+                    <div class="viewa"><a>View</a></div>
+            </div>       
+            <p id="old">Old shool fashion</p>
+        </div>
+    </div>
+    <div class="alert-system">
+        <div class="content-mid-text4">
+            <div class="icon-text4">
+                <div>
+                    <img src="#" alt="">
+                </div>
+                <div>
+                <p>ALERT SYSTEM</p>
+                </div>
+            </div>
+            <div class="text-bottom4">
+                <p id="a">Let You Body Be Your Guide </p>
+                <p id="b">
+                    I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- products________________________________ -->
+    <div class="products1"> 
+            <h2>GIFTS FOR HER</h2>
+            <div id="girl">
+
+            </div>
+            <h2>WINTER</h2>
+            <div id="winter">
+
+            </div>
+    </div>
+    <!-- cart______ -->
+    <div id="myNav1" class="overlay">
+        <a  class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <div class="header-card">
+              <p>MY CART</p>
+          </div>
+          <div class="body-cart" id="body-cart">
+            <div id="pro_in_cart">
+                
+            </div>
+            <hr>
+          </div>
+          <div class="button_in_cart">
+            <h2 id="SubTotal"></h2>
+            <button type="button"  onclick="openNav2();closeNav();show_name_total_pro();">Next</button>
+            <button type="button" onclick="SubTotal()">SubTotal</button>
+
+
+        </div> 
+        </div>
+      </div>
+      <div id="myNav2" class="overlay2">
+        <div class="overlay-content2">
+            <div class="container3">
+                <div class="content3">
+                    <div class="block3">
+                        <h5>1: Enter customer information</h5>
+                        <input type="text" id="Fn3" placeholder="Full name">
+                        <input type="number" id="Pn3" placeholder="Phone number">
+                        <input type="text" id="Ema3" placeholder="Email">
+                        <input type="text" id="Adr3" placeholder="Address">
+                        <textarea name="message3" id="Mess3" rows="5" cols="40" placeholder="Messages"></textarea>
+                    </div>
+                    <div class="block3">
+                        <h5>2: Choose a form of payment</h5>
+                        <select id="Sl3">
+                            <option value="MB">MB bank (Ngân hàng quân đội)</option>
+                            <option value="Agr">Agribank (Ngân hàng Nông nghiệp và Phát triển Nông thôn VN)</option>
+                            <option value="BIDV">BIDV (Đầu tư và Phát triển Việt Nam)</option>
+                            <option value="Scb">Sacombank (Ngân hàng TMCP Sài Gòn Thương Tín)</option>
+                            <option value="ACB">ACB (Ngân hàng thương mại cổ phần Á Châu)</option>
+                            <option value="Vcb">Vietcombank (Ngân Hàng TMCP Ngoại Thương Việt Nam)</option>
+                            <option value="Vpb">VPbank (Ngân hàng TMCP Việt Nam Thịnh Vượng)</option>
+                          </select>
+                        <p id="text3">Pay online by Internet Banking or domestic ATM card to get 5% discount, safe payment via VTCPAY gateway</p>
+                    </div>
+                    <div class="block3_4">
+                        <h5>Review your order</h5>
+                        <div id="table_out">
+                            <table id="tblaaa">
+                                <tbody id="tbody">
+
+                                </tbody>
+                                <tr>
+                                    <td>Subtotal</td>
+                                    <td id="Temp3"></td>
+                                </tr>
+                            </table>
+
+                        </div>
+                        <div class="pay3">
+                            <button onclick="openNav5();closeNav2();myfuction4();" id="Pay3">Pay now</button>
+                        </div>
+                        <div class="back3">
+                            <a ><button id="Back3" onclick="closeNav2()">Back home</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="next_nha"type="button" onclick="closeNav2();">Next</button>
+      </div>
+
+      <!-- duong___________ -->
+      <div id="myNav5" class="overlay5">
+        <a class="closebtn5" onclick="closeNav5();">&times;</a>
+        <div class="overlay-content5">
+            <div class="customer4" id="customer4">
+                <div class="notification">
+                    <i class="ri-notification-2-line"></i>
+                    <h3>MESSAGES</h3>
+                </div>
+                <div id="infomation4">
+                    <div class="output_info" id="namecs4"> </div>
+                    <div class="output_info" id="phonecs4"> </div>
+                    <div class="output_info" id="emailcs4"> </div>
+                    <div class="output_info" id="addresscs4"> </div>
+                    <div class="output_info" id="messsenger4"> </div>
+                </div>
+                <div id="product4">
+    
+                </div>
+            </div>
+    
+        </div>
+      </div>
+
+    <script src="shop.js"></script>
+</body>
+</html>
